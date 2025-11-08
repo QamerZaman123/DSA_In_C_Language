@@ -15,6 +15,7 @@ void LinkedListTraversal(struct Node *ptr){
     }
 }
 
+// Case 1: Insert a node at start
 struct Node * InsertAtFirst(struct Node *head, int data){
     struct Node *ptr = (struct Node *) malloc(sizeof(struct Node));
 
@@ -23,6 +24,21 @@ struct Node * InsertAtFirst(struct Node *head, int data){
     return ptr;
 }
 
+// Case 2: Insert a node at the end
+struct Node * InsertAtEnd(struct Node *head, int data){
+    struct Node *ptr = (struct Node *)malloc(sizeof(struct Node));
+    ptr->data = data;
+    struct Node *p = head;
+
+    while(p->next != NULL){
+        p = p->next;
+    }
+    p->next = ptr;
+    ptr->next = NULL;
+    return head;
+}
+
+// Case 3: Insert a node at an provided index or between
 struct Node * InsertAtIndex(struct Node *head, int data, int index){
     struct Node *ptr = (struct Node *)malloc(sizeof(struct Node));
     struct Node *p = head;
@@ -39,19 +55,7 @@ struct Node * InsertAtIndex(struct Node *head, int data, int index){
     return head;
 }
 
-struct Node * InsertAtEnd(struct Node *head, int data){
-    struct Node *ptr = (struct Node *)malloc(sizeof(struct Node));
-    ptr->data = data;
-    struct Node *p = head;
-
-    while(p->next != NULL){
-        p = p->next;
-    }
-    p->next = ptr;
-    ptr->next = NULL;
-    return head;
-}
-
+// Case 4: Insert if we have provided with previous node or the location
 struct Node * InsertAtSpecificPlace(struct Node *head, struct Node *prevNode, int data){
     struct Node *ptr = (struct Node *)malloc(sizeof(struct Node));
     ptr->data = data,

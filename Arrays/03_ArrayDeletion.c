@@ -15,7 +15,6 @@ int indDeletion(int arr[], int size, int index){
     return 1;
 }
 
-
 int main(){
     //              0 1 2 3 4 
     //              1 3 4 5

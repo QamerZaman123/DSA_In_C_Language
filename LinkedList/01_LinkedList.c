@@ -7,7 +7,7 @@ struct Node{
  struct Node *next;
 };
 
-void LinkedList(struct Node *ptr){
+void LinkedListTraversal(struct Node *ptr){
     while(ptr != NULL){
         printf("Element: %d\n", ptr->data);
         ptr = ptr->next;
@@ -39,7 +39,7 @@ int main(){
     fourth->data = 33;
     fourth->next = NULL;
 
-    LinkedList(head);
+    LinkedListTraversal(head);
 
     return 0;
 }

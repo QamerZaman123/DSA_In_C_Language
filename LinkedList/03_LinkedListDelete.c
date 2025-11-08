@@ -14,6 +14,7 @@ void traverse(struct Node *ptr){
     }
 }
 
+// Case 1: Deleting the first node
 struct Node * dFirst(struct Node *head){
     struct Node *ptr = head;
     head = head->next;
@@ -22,6 +23,21 @@ struct Node * dFirst(struct Node *head){
     return head;
 }
 
+// Case 2: Deleting the last node
+struct Node * dLast(struct Node *head){
+    struct Node *p = head;
+    struct Node *q = p->next;
+
+    while(q->next != NULL){
+        p = p->next;
+        q = q->next;
+    }
+    p->next = NULL;
+    free(q);
+    return head;
+}
+
+// Case 3: Deleting the node from between or with provided index
 struct Node * dBetween(struct Node *head, int index){
     struct Node *p = head;
 
@@ -36,19 +52,7 @@ struct Node * dBetween(struct Node *head, int index){
     return head;
 }
 
-struct Node * dLast(struct Node *head){
-    struct Node *p = head;
-    struct Node *q = p->next;
-
-    while(q->next != NULL){
-        p = p->next;
-        q = q->next;
-    }
-    p->next = NULL;
-    free(q);
-    return head;
-}
-
+// Case 4: Deleting the node having specific value (eg., delete a node with containing value 23)
 struct Node * dVal(struct Node *head, int val){
     struct Node *p = head;
     struct Node *q = p->next;

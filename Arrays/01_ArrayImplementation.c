@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// (*a).total_size = tSize;
-// (*a).used_size = uSize;
-
-// // int *ptr = (int *)malloc(tSize * sizeof(int));
-// (*a).ptr = (int *)malloc(tSize * sizeof(int));
 struct myArray
 {
     int total_size;
@@ -15,6 +10,11 @@ struct myArray
 
 void createArray(struct myArray *a, int tSize, int uSize)
 {
+    // (*a).total_size = tSize;
+    // (*a).used_size = uSize;
+
+    // // int *ptr = (int *)malloc(tSize * sizeof(int));
+    // (*a).ptr = (int *)malloc(tSize * sizeof(int));
 
     // Short-cut
     a->total_size = tSize;
@@ -29,6 +29,7 @@ void show(struct myArray *a)
         printf("%d\n", (a->ptr)[i]);
     }
 }
+
 void set(struct myArray *a)
 {
     int n;
