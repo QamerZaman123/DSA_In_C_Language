@@ -26,4 +26,4 @@ The main goal of this repository is to strengthen my understanding of DSA concep
 
 ---
 
-✨ *I’ll keep updating this repository as I learn and solve more DSA problems.*
+*I’ll keep updating this repository as I learn and solve more DSA problems.*
