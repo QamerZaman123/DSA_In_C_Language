@@ -17,7 +17,8 @@ The main goal of this repository is to strengthen my understanding of DSA concep
 
 - Arrays  
 - Linked Lists  
-- Stacks 
+- Stacks
+- Queues
 
 ## Problems Covered So Far
 
