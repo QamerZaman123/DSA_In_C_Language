@@ -23,6 +23,7 @@ The main goal of this repository is to strengthen my understanding of DSA concep
 
 - Check for Balanced Parentheses  
 - Implement Stack using Arrays
+- Infix to Postfix
 
 ---
 
