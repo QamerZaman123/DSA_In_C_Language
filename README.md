@@ -15,10 +15,16 @@ The main goal of this repository is to strengthen my understanding of DSA concep
 
 ## Topics Covered So Far
 
-- Arrays  
+# Data Structures
+- Arrays
 - Linked Lists  
 - Stacks
 - Queues
+- Trees: Linked Binary Tree, Binary Search Tree
+
+# Algorithms
+- Sorting Algorithms: Bubble Sort, Count Sort, Insertion Sort, Merge Sort, Quick Sort, Selection Sort
+
 
 ## Problems Covered So Far
 
