@@ -29,7 +29,8 @@ The main goal of this repository is to strengthen my understanding of DSA concep
 ## Problems Covered So Far
 
 - Check for Balanced Parentheses  
-- Implement Stack using Arrays
+- Implement Stack using Arrays & Linked List
+- Implement Queue using Arrays & Linked List
 - Infix to Postfix
 
 ---
