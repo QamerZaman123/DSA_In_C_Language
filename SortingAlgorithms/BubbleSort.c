@@ -9,11 +9,14 @@ void printArray(int* A, int n) {
 
 void bubble_sort(int* A, int n){
     int temp;
+
+    // passes for i=0 it is first pass
     for(int i=0; i < n-1; i++){
         
         printf("Pass No %d\n",i+1);
         int isSorted = 1;
         
+        // comparions for each pass: for first pass it will do n-1-i= n-1-0 
         for (int j = 0; j < n-1-i; j++)
         {
             if(A[j]>A[j+1]){
@@ -23,6 +26,7 @@ void bubble_sort(int* A, int n){
                 isSorted = 0;
             }
         }
+        
     if(isSorted==1){
         return;
     }    
